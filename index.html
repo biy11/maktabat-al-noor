@@ -6,6 +6,8 @@
     <title>Maktabat Al-Noor</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/css/modal.css" rel="stylesheet">
+    <script src="static/js/modal.js" defer></script>
 </head>
 <body>
 
@@ -27,7 +29,21 @@
         <h3>The Beautiful Names and Attributes of ALLAH</h3>
         <p>Author: Shaykh ibn Uthaymeen</p>
         <p>Price: £9.00</p>
+        <button onclick="openModal('namesAndAttributes')">View Details</button>    
     </div>
+
+    <!-- Modal -->
+    <div id="namesAndAttributes" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('namesAndAttributes')">&times;</span>
+            <h3>The Beautiful Names and Attributes of ALLAH</h3>
+            <img src="static/images/books/namesAndAttributes.png" alt="Book Cover">
+            <p>Author: Shaykh ibn Uthaymeen</p>
+            <p>Price: £9.00</p>
+            <p>Description: A detailed exploration of the beautiful names and attributes of Allah...</p>
+        </div>
+    </div>
+
     <div class="book">
         <img src="static/images/books/fourImams.png" alt="Book Title">
         <h3>The Four Imams</h3>
