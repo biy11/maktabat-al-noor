@@ -24,6 +24,14 @@
     text-align: center;
 }
 
+.modal img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
 /* Close Button */
 .close {
     color: #aaa;

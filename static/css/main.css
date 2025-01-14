@@ -45,16 +45,21 @@ nav a:hover {
     margin: 1rem;
     display: inline-block;
     text-align: left;
-    width: 250px;
+    width: 225px;
+    height: 350px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+    overflow: hidden;
 }
 .book img {
-    max-width: 100%;
-    height: auto;
+    max-width: 125%;
+    height: 200px;
+    object-fit: cover;
     margin-bottom: 1rem;
 }
 .book h3 {
     margin: 0;
+    font-size: 1rm;
     color: #007b3d;
 }
 .book p {
