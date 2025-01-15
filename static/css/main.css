@@ -1,4 +1,4 @@
-/* css code for the main website  */
+/* CSS code for the main website */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,73 +6,138 @@ body {
     background-color: #f5f5f5;
     color: #333;
 }
+
 header {
     background-color: #004d26;
     color: white;
     padding: 1rem 0;
     text-align: center;
 }
+
 header img {
     max-width: 100px;
     display: block;
     margin: 0 auto;
 }
+
 header h1 {
     margin: 0.5rem 0;
 }
+
 nav {
     background-color: #084B2C;
     padding: 0.5rem 1rem;
     text-align: center;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
     font-weight: bold;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
 .content {
     padding: 2rem;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-gap: 1rem;
+    align-items: start;
 }
+
 .book {
     border: 1px solid #ddd;
     background: white;
-    padding: 1rem;
-    margin: 1rem;
-    display: inline-block;
-    text-align: left;
-    width: 225px;
-    height: 350px;
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     vertical-align: top;
     overflow: hidden;
+    height: auto;
 }
+
 .book img {
-    display: block;
-    margin:  0 auto;
-    max-width: 125%;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
+.book h3, .book p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
 .book h3 {
     margin: 0;
-    font-size: 1rm;
+    font-size: 1rem; /* Standard font size for titles */
     color: #007b3d;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limits the text to two lines */
+    -webkit-box-orient: vertical;
 }
-.book p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-    color: #555;
+
+.book h3:lang(ar) {
+    font-size: 1.2rem; /* Larger font size for Arabic to enhance readability */
+    font-family: 'Roboto', sans-serif; /* Ensure the font supports Arabic glyphs */
 }
+
 .footer {
     background-color: #004d26;
     color: white;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+.search-and-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-options {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007b3d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a2c;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    .book {
+        padding: 5px;
+    }
+
+    .book img {
+        max-height: 150px;
+    }
+
+    .book h3, .book p {
+        font-size: 0.8rem;
+    }
 }

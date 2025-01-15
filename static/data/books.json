@@ -1,0 +1,101 @@
+[
+  {
+      "id": "namesAndAttributes",
+      "title": "The Beautiful Names and Attributes of ALLAH",
+      "author": "Shaykh ibn Uthaymeen",
+      "price": 9.00,
+      "image": "static/images/books/namesAndAttributes.png",
+      "description": "A detailed exploration of the beautiful names and attributes of Allah...",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "fourImams",
+      "title": "The Four Imams",
+      "author": "ALI HAMMUDA",
+      "price": 10.99,
+      "image": "static/images/books/fourImams.png",
+      "description": "Learn about the lives and works of the four Imams...",
+      "category": "Seerah"
+  },
+  {
+      "id": "3principles",
+      "title": "Explanation Of The 3 Fundamental Principles Of Islam",
+      "author": "Shaykh ibn Uthaymeen",
+      "price": 14.99,
+      "image": "static/images/books/3PrinciplesEng.png",
+      "description": "A deep dive into the fundamental principles of Islam...",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "kitabAtTawheedHc",
+      "title": "Kitab At-Tawhid Hard Cover",
+      "author": "Sheikh ibn Abdul Wahhab",
+      "price": 8.99,
+      "image": "static/images/books/kitabAtTawheedHc.png",
+      "description": "A comprehensive guide to the monotheistic principles of Islam.",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "diseaseAndCure",
+      "title": "Disease & the Cure Deluxe Edition",
+      "author": "Ibn al-Qayyim",
+      "price": 15.99,
+      "image": "static/images/books/diseaseAndCure.png",
+      "description": "Insights into Islamic spirituality and its approach to health and disease.",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "wayfarers",
+      "title": "The Wayfarers' Path",
+      "author": "Ibn al-Qayyim",
+      "price": 4.99,
+      "image": "static/images/books/wayfarers.png",
+      "description": "A journey through the spiritual teachings and wisdom of Ibn al-Qayyim.",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "tawbah",
+      "title": "Tawbah : Turning to Allah in Repentance, Disease & the Cure",
+      "author": "Ibn al-Qayyim",
+      "price": 14.99,
+      "image": "static/images/books/tawbah.png",
+      "description": "Exploring the concept of repentance in Islamic theology and spirituality.",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "majmooalShooroohat",
+      "title": "Majmoo' Al-Shuroohaat - مجموع الشروحات",
+      "author": "Shaykh Haytham bin Muhammad Sarhaan",
+      "price": 7.50,
+      "image": "static/images/books/majmooalShooroohat.png",
+      "description": "A collection of commentaries on different Islamic texts.",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "fourPrinciplesEnglish",
+      "title": "The Four Fundamental Principles",
+      "author": "Sheikh Saleh Al-Fawzan",
+      "price": 3.99,
+      "image": "static/images/books/fourPrinciplesEnglish.png",
+      "description": "A detailed discussion on the core principles that underpin Islamic belief.",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "collectionOfBooks",
+      "title": "Collection of Important Books for Every Muslim - مجموع المتون المهمة لكل مسلم",
+      "author": "Shaykh Haitham bin Muhammad Sarhaan",
+      "price": 5.99,
+      "image": "static/images/books/CollectionOfBooks.png",
+      "description": "Essential Islamic texts compiled for both beginners and advanced learners.",
+      "category": "Aqeedah"
+  },
+  {
+      "id": "nazm",
+      "title": "SHARH NAZM QAWA’ED AL-E’RAB – شرح نظم قواعد الإعراب",
+      "author": "Sheikh ibn Uthaymeen",
+      "price": 8.50,
+      "image": "static/images/books/nazm.png",
+      "description": "An in-depth analysis of Arabic grammar and its rules.",
+      "category": "Language"
+  }
+]
