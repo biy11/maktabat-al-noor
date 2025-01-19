@@ -99,12 +99,12 @@
       "category": "Language"
   },
   {
-    "id": "nazm",
-    "title": "SHARH NAZM QAWA’ED AL-E’RAB – شرح نظم قواعد الإعراب",
+    "id": "fortyHadithUthaymeen",
+    "title": "SHARH AL ARBA’AIN AL NAWAWI – شرح الأربعين النووية",
     "author": "Sheikh ibn Uthaymeen",
     "price": 8.50,
-    "image": "static/images/books/nazm.png",
-    "description": "An in-depth analysis of Arabic grammar and its rules.",
+    "image": "static/images/books/fortyHadithUthaymeen.png",
+    "description": "An explanation of the classic 40 hadeeth compiled by Imam Nawawi",
     "category": "Language"
     }
 ]

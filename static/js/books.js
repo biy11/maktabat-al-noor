@@ -31,7 +31,7 @@ function displayBooks(books) {
           <img src="${book.image}" alt="${book.title}" />
           <h3>${book.title}</h3>
           <p>Author: ${book.author}</p>
-          <p>Price: £${book.price}</p>
+          <p>Price: £${book.price.toFixed(2)}</p>
           <button onclick="openModal('${book.id}')">View Details</button>
         `;
 
@@ -57,7 +57,7 @@ function createModal(book) {
         <h3>${book.title}</h3>
         <img src="${book.image}" alt="${book.title}" />
         <p>Author: ${book.author}</p>
-        <p>Price: £${book.price}</p>
+        <p>Price: £${book.price.toFixed(2)}</p>
         <p>Description: ${book.description}</p>
       </div>
     `;
