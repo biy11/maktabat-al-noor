@@ -42,7 +42,7 @@
       "price": 15.99,
       "image": "static/images/books/diseaseAndCure.png",
       "description": "Insights into Islamic spirituality and its approach to health and disease.",
-      "category": "Aqeedah"
+      "category": "Tazkiyyah"
   },
   {
       "id": "wayfarers",
@@ -51,7 +51,7 @@
       "price": 4.99,
       "image": "static/images/books/wayfarers.png",
       "description": "A journey through the spiritual teachings and wisdom of Ibn al-Qayyim.",
-      "category": "Aqeedah"
+      "category": "Tazkiyyah"
   },
   {
       "id": "tawbah",
@@ -60,7 +60,7 @@
       "price": 14.99,
       "image": "static/images/books/tawbah.png",
       "description": "Exploring the concept of repentance in Islamic theology and spirituality.",
-      "category": "Aqeedah"
+      "category": "Tazkiyyah"
   },
   {
       "id": "majmooalShooroohat",
@@ -105,6 +105,6 @@
     "price": 8.50,
     "image": "static/images/books/fortyHadithUthaymeen.png",
     "description": "An explanation of the classic 40 hadeeth compiled by Imam Nawawi",
-    "category": "Language"
+    "category": "Hadeeth"
     }
 ]
