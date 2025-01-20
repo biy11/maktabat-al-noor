@@ -5,7 +5,7 @@
       "author": "Shaykh ibn Uthaymeen",
       "price": 9.00,
       "image": "static/images/books/namesAndAttributes.png",
-      "description": "A detailed exploration of the beautiful names and attributes of Allah...",
+      "description": "Want to get closer to Allah and learn more about Him? Learn about His beautiful names and attributes. ",
       "category": "Aqeedah"
   },
   {
@@ -14,7 +14,7 @@
       "author": "ALI HAMMUDA",
       "price": 10.99,
       "image": "static/images/books/fourImams.png",
-      "description": "Learn about the lives and works of the four Imams...",
+      "description": "Learn about the lives and works of the four Imams. Their journey in seeking knowledge, the hardships they endured, and the reasons for their success. All in one place.",
       "category": "Seerah"
   },
   {
@@ -23,7 +23,7 @@
       "author": "Shaykh ibn Uthaymeen",
       "price": 14.99,
       "image": "static/images/books/3PrinciplesEng.png",
-      "description": "A deep dive into the fundamental principles of Islam...",
+      "description": "A detailed explanation on the first 3 questions every person will be asked in the grave. Prepare yourself by truly knowing your Lord, your religion and your Prophet",
       "category": "Aqeedah"
   },
   {
@@ -32,7 +32,7 @@
       "author": "Sheikh ibn Abdul Wahhab",
       "price": 8.99,
       "image": "static/images/books/kitabAtTawheedHc.png",
-      "description": "A comprehensive guide to the monotheistic principles of Islam.",
+      "description": "A must have book in every household. The book clarifies what Tawheed is and the rewards that it carries, whilst also breaking down shirk and its dangers.",
       "category": "Aqeedah"
   },
   {
@@ -59,7 +59,7 @@
       "author": "Ibn al-Qayyim",
       "price": 14.99,
       "image": "static/images/books/tawbah.png",
-      "description": "Exploring the concept of repentance in Islamic theology and spirituality.",
+      "description": "Exploring the concept of repentance and how to be forgiven, regardless of your mistakes.",
       "category": "Tazkiyyah"
   },
   {
@@ -77,7 +77,7 @@
       "author": "Sheikh Saleh Al-Fawzan",
       "price": 3.99,
       "image": "static/images/books/fourPrinciplesEnglish.png",
-      "description": "A detailed discussion on the core principles that underpin Islamic belief.",
+      "description": "A detailed discussion on the four principles regarding shirk. Explanation is both in Arabic and English",
       "category": "Aqeedah"
   },
   {
