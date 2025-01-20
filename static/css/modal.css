@@ -19,30 +19,42 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 80%;
-    max-width: 500px;
+    max-width: 800px; /* Adjusted to fit more content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    display: flex; /* Flexbox for layout */
+    gap: 20px;
+    align-items: flex-start;
+    text-align: left;
 }
 
-.modal img{
-    width: 200px;
-    height: 250px;
+.modal-book-image {
+    flex: 1; /* Takes up half of the space */
+    max-width: 300px;
+}
+
+.modal-book-image img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    margin: 0 auto 1rem;
-    display: block;
+}
+
+.modal-book-info {
+    flex: 2; /* Takes up twice the space */
+    max-width: 400px;
 }
 
 /* Close Button */
 .close {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .close:hover,
 .close:focus {
     color: #000;
-    text-decoration: none;
 }
