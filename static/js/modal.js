@@ -23,3 +23,38 @@ window.onclick = function(event) {
         }
     });
 };
+
+// Handle the Escape key for closing modals
+window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        document.querySelectorAll(".modal").forEach((modal) => {
+            modal.style.display = "none";
+        });
+    }
+});
+
+
+// Trap focus within modal
+function trapFocus(modal) {
+    const focusableElements = modal.querySelectorAll(
+        'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    modal.addEventListener("keydown", (e) => {
+        if (e.key === "Tab") {
+            if (e.shiftKey) {
+                if (document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                }
+            } else {
+                if (document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        }
+    });
+}
