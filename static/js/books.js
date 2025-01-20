@@ -25,6 +25,7 @@ function displayBooks(books) {
     books.forEach(book => {
         const bookDiv = document.createElement('div');
         bookDiv.className = 'book';
+        bookDiv.dataset.bookId = book.id;
 
         // Create the book HTML
         bookDiv.innerHTML = `
@@ -32,8 +33,12 @@ function displayBooks(books) {
           <h3>${book.title}</h3>
           <p>Author: ${book.author}</p>
           <p>Price: £${book.price.toFixed(2)}</p>
-          <button onclick="openModal('${book.id}')">View Details</button>
         `;
+
+        // Click event lsitner for book
+        bookDiv.addEventListener('click',()=>{
+            openModal(book.id);
+        })
 
         bookList.appendChild(bookDiv);
 
