@@ -1,0 +1,157 @@
+/* Search and Filter Section */
+.search-and-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between search bar and filter button */
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allows the search bar to take up remaining space */
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #007b3d;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #007b3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #005a2c;
+}
+
+.filter-toggle {
+    padding: 10px 15px;
+    background-color: #084B2C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-toggle:hover {
+    background-color: #007b3d;
+}
+
+/* Filter Options Section */
+.filter-options {
+    display: none;
+    margin: 1rem auto; /* Center the filter options */
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Adjusted to fit side-by-side layout */
+    width: 100%; /* Ensure it doesn't exceed the parent container */
+}
+
+.filter-options .filter-row {
+    display: flex;
+    gap: 1rem; /* Adds spacing between filter inputs */
+    margin-bottom: 1rem;
+}
+
+.filter-group {
+    flex: 1; /* Allows each filter group to take equal space */
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%; /* Full width within the container */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color: #007b3d;
+}
+
+.apply-filters {
+    width: 100%; /* Full width within the container */
+    padding: 10px;
+    background-color: #007b3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-filters:hover {
+    background-color: #005a2c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-options {
+        max-width: 100%; /* Ensure it doesn't exceed the screen width */
+        width: auto; /* Let it adapt to the parent container */
+        padding: 1rem; /* Keep consistent padding */
+        margin: 0 auto; /* Center the filter options */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .filter-options .filter-row {
+        flex-direction: column; /* Stack filter inputs vertically */
+        gap: 0; /* Remove unnecessary gap between inputs */
+    }
+
+    .filter-group {
+        margin-bottom: 1rem; /* Add spacing between stacked inputs */
+    }
+    .search-and-filter {
+        flex-direction: column; /* Stack elements */
+        align-items: stretch; /* Stretch children to full width */
+    }
+
+    .search-bar input {
+        margin-right: 10px;
+        margin-bottom: 10px; /* Add spacing between input and buttons */
+    }
+
+    .search-button,
+    .filter-toggle {
+        width: 100%; /* Ensure buttons take full width */
+        margin: 0; /* Reset margins to prevent misalignment */
+    }
+}
