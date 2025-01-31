@@ -94,20 +94,36 @@ function searchEnter(event) {
 
 function filterBooks() {
     const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
-    const minPrice = parseFloat(document.getElementById('minPrice').value) || 0;
-    const maxPrice = parseFloat(document.getElementById('maxPrice').value) || 999999;
+    const sortFilter = document.getElementById('sortFilter').value;
     const categoryFilter = document.getElementById('categoryFilter').value;
+    const inStockFilter = document.getElementById('inStockFilter').checked;
 
     // Filter the books based on user input
-    const filteredBooks = booksData.filter(book => {
+    let filteredBooks = booksData.filter(book => {
         const titleMatch = book.title.toLowerCase().includes(searchInput);
-        const priceMatch = book.price >= minPrice && book.price <= maxPrice;
         const categoryMatch = categoryFilter ? (book.category === categoryFilter) : true;
+        const inStockMatch = inStockFilter ? (book.quantity > 0) : true; // Include only books with quantity > 0 if filter is checked
 
-        return titleMatch && priceMatch && categoryMatch;
+        return titleMatch && categoryMatch && inStockMatch;
     });
 
-    // Display the filtered results
+    // Apply sorting
+    switch (sortFilter) {
+        case 'priceIncreasing':
+            filteredBooks.sort((a, b) => a.price - b.price);
+            break;
+        case 'priceDecreasing':
+            filteredBooks.sort((a, b) => b.price - a.price);
+            break;
+        case 'alphabetical':
+            filteredBooks.sort((a, b) => a.title.localeCompare(b.title));
+            break;
+        default:
+            // No sorting
+            break;
+    }
+
+    // Display the filtered and sorted results
     displayBooks(filteredBooks);
 }
 

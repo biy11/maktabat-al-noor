@@ -41,12 +41,13 @@
     <div class="filter-options" id="filterOptions">
         <div class="filter-row">
             <div class="filter-group">
-                <label for="minPrice">Min Price</label>
-                <input type="number" id="minPrice" placeholder="£0" />
-            </div>
-            <div class="filter-group">
-                <label for="maxPrice">Max Price</label>
-                <input type="number" id="maxPrice" placeholder="£999" />
+                <label for="sortFilter">Sort By</label>
+                <select id="sortFilter">
+                    <option value="">None</option>
+                    <option value="priceIncreasing">Price: Low to High</option>
+                    <option value="priceDecreasing">Price: High to Low</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
             </div>
             <div class="filter-group">
                 <label for="categoryFilter">Category</label>
@@ -58,6 +59,12 @@
                     <option value="Hadith">Hadith</option>
                     <option value="Tazkiyyah">Tazkiyyah (Heart & Soul)</option>
                 </select>
+            </div>
+        </div>
+        <div class="filter-row">
+            <div class="filter-group">
+                <label for="inStockFilter">In Stock</label>
+                <input type="checkbox" id="inStockFilter" />
             </div>
         </div>
         <button class="apply-filters" onclick="applyFilters()">Apply Filters</button>

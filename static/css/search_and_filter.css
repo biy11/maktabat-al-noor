@@ -121,6 +121,17 @@
     background-color: #005a2c;
 }
 
+/* Checkbox styling for "In Stock" filter */
+.filter-group input[type="checkbox"] {
+    width: auto; /* Allow checkbox to take its natural width */
+    margin-right: 0.5rem; /* Add spacing between checkbox and label */
+}
+
+.filter-group label[for="inStockFilter"] {
+    display: flex;
+    align-items: center; /* Align checkbox and label vertically */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .filter-options {
