@@ -61,11 +61,11 @@ function createModal(book) {
     modalDiv.innerHTML = `
       <div class="modal-content">
         <span class="close" onclick="closeModal('${book.id}')">&times;</span>
+        <h3 class="modal-book-title">${book.title}</h3> <!-- Title first -->
         <div class="modal-book-image">
           <img src="${book.image}" alt="${book.title}" />
         </div>
         <div class="modal-book-info">
-          <h3>${book.title}</h3>
           <p><strong>Author:</strong> ${book.author}</p>
           <p><strong>Price:</strong> £${book.price.toFixed(2)}</p>
           <p><strong>Description:</strong> ${book.description}</p>
