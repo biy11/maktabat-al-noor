@@ -59,10 +59,11 @@ nav a.selected{
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .book:hover{
-    transform: translate(-5px);
+    transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
@@ -106,6 +107,21 @@ button {
 button:hover {
     background-color: #005a2c;
 }
+
+
+/* SOLD OUT Badge */
+.sold-out {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 
 /* Make the layout responsive */
 @media (max-width: 768px) {

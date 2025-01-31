@@ -3,6 +3,7 @@ function openModal(id) {
     const modal = document.getElementById(id);
     if (modal) {
         modal.style.display = "block";
+        trapFocus(modal)
     }
 }
 

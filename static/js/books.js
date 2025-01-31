@@ -33,6 +33,8 @@ function displayBooks(books) {
           <h3>${book.title}</h3>
           <p>Author: ${book.author}</p>
           <p>Price: £${book.price.toFixed(2)}</p>
+          <p>Available: ${book.quantity}</p>
+          ${book.quantity === 0 ? '<div class="sold-out">SOLD OUT</div>': ''}
         `;
 
         // Click event lsitner for book
