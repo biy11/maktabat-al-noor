@@ -79,11 +79,17 @@ nav a.selected{
     margin: 0;
     font-size: 1rm;
     color: #007b3d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .book p {
     margin: 0.5rem 0;
     font-size: 0.9rem;
     color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 .footer {
     background-color: #004d26;
